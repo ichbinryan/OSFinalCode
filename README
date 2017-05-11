@@ -1,0 +1,37 @@
+This is my final project code for Operating Systems 2
+
+This project times encoding and decoding for various erasure code libraries.  In order to run this
+you will need to install the following libraries.  Follow the instructions on the git to do so.
+
+liberasurecode: https://github.com/openstack/liberasurecode
+jerasure: https://github.com/tsuraan/Jerasure
+https://github.com/01org/isa-l
+
+You will also need PyECLib
+
+https://github.com/openstack/pyeclib
+
+Running in Ubuntu 14.04, the installation instructions worked perfectly.
+
+You can run the following ec_types:
+liberasurecode_rs_vand
+jerasure_rs_vand
+jerasure_rs_cauchy
+isa_l_rs_vand
+isa_l_rs_cauchy
+
+Disk Simulator:
+
+This will encode a file and write it to the nodes director (its purpose is to simulate storage
+devices in a distributed file systems).  To run type
+
+python diskSimulator.py <number data disks> <number coding disks> <ec_type> <filename to encode>
+
+Your file needs to be in the OSFinalCode directory.
+
+Disk Decoder:
+
+This will decode a file.  Your settings need to be the same as they were when running disk simulator.
+The disk decoder can handle up to m downed nodes.  To run type
+
+python diskDecoder.py <data disks> <coding disks> <ec_type> <filename to encode> <new filename to be written to Client>
