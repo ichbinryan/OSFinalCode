@@ -32,6 +32,7 @@ Your file needs to be in the OSFinalCode directory.
 Disk Decoder:
 
 This will decode a file.  Your settings need to be the same as they were when running disk simulator.
-The disk decoder can handle up to m downed nodes.  To run type
+The disk decoder can handle up to m downed nodes.  The 3rd arg should specify the file you
+  initially encoded.  To run type
 
 python diskDecoder.py <data disks> <coding disks> <ec_type> <filename to decode> <new filename to be written to Client>
