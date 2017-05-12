@@ -1,5 +1,9 @@
 This is my final project code for Operating Systems 2
 
+Test file can be found at http://www.divx.com/en/devices/profiles/video
+
+I used many videos from this page, but my experiment used the first one from the left.
+
 This project times encoding and decoding for various erasure code libraries.  In order to run this
 you will need to install the following libraries.  Follow the instructions on the git to do so.
 
